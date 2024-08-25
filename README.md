@@ -36,7 +36,22 @@ CREATE TABLE login (
     email VARCHAR(255) PRIMARY KEY,
     password VARCHAR(255) NOT NULL
 );
+```
 
+### Key Updates
+- Added instructions for creating the `registration` table with the required columns: `name`, `city`, `email`, and `mobile`.
+This table also store registration table
+``` sql
+USE logindb;
+
+CREATE TABLE registration (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    city VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    mobile VARCHAR(15) NOT NULL
+);
+```
 
 ### Key Points
 
