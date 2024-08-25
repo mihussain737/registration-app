@@ -80,8 +80,8 @@
                 <td><%= result.getString("city") %></td>
                 <td><%= result.getString("email") %></td>
                 <td><%= result.getString("mobile") %></td>
-                <td><a href="delete?email=<%= result.getString("email") %>">Delete</a></td>
-                <td><a href="update?email=<%= result.getString("email") %>&mobile=<%= result.getString("mobile") %>">Update</a></td>
+                <td><a href="delete?email=<%= result.getString("email") %>">Delete</a> &nbsp
+                <a href="update?email=<%= result.getString("email") %>&mobile=<%= result.getString("mobile") %>">Update</a></td>
             </tr>
             <%
                     }
